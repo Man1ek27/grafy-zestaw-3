@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graph-cli"
+version = "0.3.0"
+description = "Grafy ważone: Dijkstra, macierz odległości, centrum grafu, minimalne drzewo rozpinające"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["networkx>=3.0", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pre-commit>=4", "ruff==0.16.10", "pytest>=8"]
+
+[project.scripts]
+graph-cli = "graph_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
