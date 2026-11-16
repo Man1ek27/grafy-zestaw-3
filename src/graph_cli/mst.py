@@ -11,7 +11,7 @@ def kruskal(graph: Graph) -> list[tuple[int, int, int]]:
     Krawędzie sortujemy według niemalejących wag (przy remisie według numerów
     wierzchołków). Krawędź uv trafia do lasu T, gdy łączy różne drzewa,
     czyli u i v leżą w różnych spójnych składowych T — sprawdza to
-    components() z zestawu 2. Kończymy, gdy T ma n − 1 krawędzi.
+    components() z zestawu 2. Kończymy, gdy T ma n - 1 krawędzi.
     """
     n = graph.number_of_nodes()
     edges = sorted((w, min(u, v), max(u, v)) for u, v, w in graph.edges(data="weight"))

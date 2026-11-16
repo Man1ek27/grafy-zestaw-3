@@ -53,7 +53,7 @@ narzędzia developerskie Ruff, pre-commit i pytest. Jeżeli na macOS wystąpi
 Alternatywne uruchomienie aplikacji: `python -m graph_cli`.
 
 ## 2. Dane wejściowe
-
+ 
 Zgodnie z przykładowym wejściem zestawu 3 jedno uruchomienie pracuje na jednym
 grafie. Polecenia 2–5 przyjmują go na jeden z dwóch sposobów:
 
@@ -102,7 +102,7 @@ Na rysunku przy każdej krawędzi jest jej waga.
 ```bash
 graph-cli dijkstra --input examples/slides-7.txt --plot output/z2.png
 graph-cli dijkstra --input examples/input-12.txt --start 5
-graph-cli dijkstra --n 6 --seed 2
+graph-cli dijkstra --n 6 -eges 10 --seed 2
 ```
 
 ```text

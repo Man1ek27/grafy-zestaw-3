@@ -6,9 +6,9 @@ from .dijkstra import dijkstra
 
 
 def distance_matrix(graph: Graph) -> list[list[float]]:
-    """Wiersz s − 1 to tablica ds z dijkstra(G, w, s) dla kolejnych s = 1..n.
+    """Wiersz s - 1 to tablica ds z dijkstra(G, w, s) dla kolejnych s = 1..n.
 
-    Element [w − 1][k − 1] to długość najkrótszej ścieżki z w do k.
+    Element [w - 1][k - 1] to długość najkrótszej ścieżki z w do k.
     """
     rows = []
     for s in sorted(graph.nodes()):

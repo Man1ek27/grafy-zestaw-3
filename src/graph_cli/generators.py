@@ -27,7 +27,6 @@ def generate_gnl(n: int, edges: int, seed: int | None = None) -> Graph:
     return graph
 
 
-# gnp - G(n, p) - losowy graf z n wierzchołkami, w którym każda możliwa krawędź jest losowana niezależnie z prawdopodobieństwem p
 def generate_gnp(n: int, probability: float, seed: int | None = None) -> Graph:
     """Losuje każdą możliwą krawędź niezależnie z podanym prawdopodobieństwem."""
     if n < 0:

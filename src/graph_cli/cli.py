@@ -78,7 +78,7 @@ def build_parser() -> argparse.ArgumentParser:
     add_graph_arguments(mst)
     add_plot_arguments(mst)
 
-    everything = commands.add_parser("all", help="Zad. 1–5 na jednym grafie")
+    everything = commands.add_parser("all", help="Zad. 1-5 na jednym grafie")
     add_graph_arguments(everything)
     add_start_argument(everything)
     everything.add_argument("--output", type=Path, help="zapisz macierz wag do pliku")

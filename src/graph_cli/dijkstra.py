@@ -1,6 +1,6 @@
 """Najkrótsze ścieżki algorytmem Dijkstry (zadanie 2).
 
-Funkcje init, relax i dijkstra odpowiadają algorytmom 1–3 z alg_3.pdf.
+Funkcje init, relax i dijkstra odpowiadają algorytmom 1-3 z alg_3.pdf.
 ds[v] — długość najkrótszej ścieżki z s do v (w trakcie: górne oszacowanie),
 ps[v] — poprzednik v na tej ścieżce (None to NIL).
 """
